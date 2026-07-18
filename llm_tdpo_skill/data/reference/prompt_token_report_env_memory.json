@@ -1,0 +1,70 @@
+{
+  "tokenizer_path": "/models/Qwen",
+  "max_length": 1024,
+  "prompt_summary": {
+    "count": 100,
+    "max_length_limit": 1024,
+    "mean_tokens": 1652.54,
+    "median_tokens": 1604.0,
+    "p90_tokens": 1881.3,
+    "p95_tokens": 1906.0,
+    "p99_tokens": 1910.0,
+    "max_tokens": 1910,
+    "min_tokens": 1470,
+    "num_over_limit": 100,
+    "ratio_over_limit": 1.0,
+    "mean_overflow_tokens": 628.54,
+    "max_overflow_tokens": 886
+  },
+  "knowledge_prompt_summary": {
+    "count": 100,
+    "max_length_limit": 1024,
+    "mean_tokens": 618.2,
+    "median_tokens": 610.0,
+    "p90_tokens": 663.0,
+    "p95_tokens": 680.0,
+    "p99_tokens": 680.0,
+    "max_tokens": 680,
+    "min_tokens": 563,
+    "num_over_limit": 0,
+    "ratio_over_limit": 0.0,
+    "mean_overflow_tokens": 0.0,
+    "max_overflow_tokens": 0
+  },
+  "examples_over_limit": [
+    {
+      "index": 0,
+      "task_id": "uav_comm_intent_dag_000148_7cdb7802",
+      "node_id": 0,
+      "prompt_tokens": 1522,
+      "knowledge_prompt_tokens": 603,
+      "over_limit": true,
+      "overflow_tokens": 498,
+      "prompt_head": "You are a prompt-only TDPO decision policy for DAG task execution.\nGoal: maximize task completion first, then reduce latency and energy.\nNo policy action mask is applied. Generate the action only from this prompt.\nInvalid or rejected actions are handled by the environment and become negative outcomes during evaluation.\nUse the mapped historical memory guidance only as weak guidance; current task/node/deadline information remains primary.\nDo not assume hidden tool tables, per-tool queue states, p",
+      "prompt_tail": "idence: gain=0.786, total=3.196s, queue=1.296s, risk=0.217, pkt_loss=0.000, fail_probability=0.217, success_rate=1.000, task_success=1, confidence=0.719.\nOutput format:\n- Output exactly one line: ACTION_NAME=<one candidate action name>\n- The action name must exactly match one name from the shuffled candidate action-name table, such as a tool name, LOCAL, or PAUSE.\n- Do not output explanations, JSON, code blocks, numeric action ids, or multiple names.\nChoose exactly one action name for this node."
+    },
+    {
+      "index": 1,
+      "task_id": "uav_comm_intent_dag_000148_7cdb7802",
+      "node_id": 1,
+      "prompt_tokens": 1580,
+      "knowledge_prompt_tokens": 563,
+      "over_limit": true,
+      "overflow_tokens": 556,
+      "prompt_head": "You are a prompt-only TDPO decision policy for DAG task execution.\nGoal: maximize task completion first, then reduce latency and energy.\nNo policy action mask is applied. Generate the action only from this prompt.\nInvalid or rejected actions are handled by the environment and become negative outcomes during evaluation.\nUse the mapped historical memory guidance only as weak guidance; current task/node/deadline information remains primary.\nDo not assume hidden tool tables, per-tool queue states, p",
+      "prompt_tail": "dence: gain=-1.100, total=2.422s, queue=0.292s, risk=0.237, pkt_loss=0.000, fail_probability=0.237, success_rate=0.667, task_success=0, confidence=0.717.\nOutput format:\n- Output exactly one line: ACTION_NAME=<one candidate action name>\n- The action name must exactly match one name from the shuffled candidate action-name table, such as a tool name, LOCAL, or PAUSE.\n- Do not output explanations, JSON, code blocks, numeric action ids, or multiple names.\nChoose exactly one action name for this node."
+    },
+    {
+      "index": 2,
+      "task_id": "uav_comm_intent_dag_000148_7cdb7802",
+      "node_id": 2,
+      "prompt_tokens": 1505,
+      "knowledge_prompt_tokens": 585,
+      "over_limit": true,
+      "overflow_tokens": 481,
+      "prompt_head": "You are a prompt-only TDPO decision policy for DAG task execution.\nGoal: maximize task completion first, then reduce latency and energy.\nNo policy action mask is applied. Generate the action only from this prompt.\nInvalid or rejected actions are handled by the environment and become negative outcomes during evaluation.\nUse the mapped historical memory guidance only as weak guidance; current task/node/deadline information remains primary.\nDo not assume hidden tool tables, per-tool queue states, p",
+      "prompt_tail": "idence: gain=0.786, total=3.196s, queue=1.296s, risk=0.217, pkt_loss=0.000, fail_probability=0.217, success_rate=1.000, task_success=1, confidence=0.719.\nOutput format:\n- Output exactly one line: ACTION_NAME=<one candidate action name>\n- The action name must exactly match one name from the shuffled candidate action-name table, such as a tool name, LOCAL, or PAUSE.\n- Do not output explanations, JSON, code blocks, numeric action ids, or multiple names.\nChoose exactly one action name for this node."
+    }
+  ],
+  "examples_under_or_equal_limit": []
+}

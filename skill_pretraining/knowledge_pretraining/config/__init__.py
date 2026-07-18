@@ -1,0 +1,2 @@
+"""Central project configuration."""
+

@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+knowledge_env_0/
+knowledge_env_dead/
+knowledge_env_time/
+tdpo_decision_runs_batch_fast_skill/
+tdpo_decision_runs_batch_fast_no/
+tdpo_eval_knowledge_env_sweep*/
+tdpo_no_skill_eval_*/
+
