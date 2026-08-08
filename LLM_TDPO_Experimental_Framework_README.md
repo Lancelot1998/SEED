@@ -39,7 +39,7 @@ SEED turns a passive wireless Digital Twin into a **proactive execution agent**:
 ## 🏗️ How the Pieces Fit Together
 
 <p align="center">
-  <img src="assets/seed_overview.png" width="100%" alt="SEED closed-loop architecture: intent → mission DAG → skill-informed LLM planning → execution in the digital twin → twin-generated preference pairs → TDPO alignment → refreshed skills"/>
+  <img src="seed_overview.png" width="100%" alt="SEED closed-loop architecture: intent → mission DAG → skill-informed LLM planning → execution in the digital twin → twin-generated preference pairs → TDPO alignment → refreshed skills"/>
 </p>
 
 Two training stages, fully decoupled:
@@ -52,7 +52,7 @@ Two training stages, fully decoupled:
 ## 📁 Repository at a Glance
 
 <p align="center">
-  <img src="assets/repo_map.png" width="100%" alt="Five self-contained modules: skill_pretraining (Table I), llm_tdpo_skill (Fig. 5 Ours, Fig. 7 TDPO), llm_tdpo_ablation (Fig. 5 baselines), baseline (Fig. 7 baselines), parameter_sensitivity"/>
+  <img src="repo_map.png" width="100%" alt="Five self-contained modules: skill_pretraining (Table I), llm_tdpo_skill (Fig. 5 Ours, Fig. 7 TDPO), llm_tdpo_ablation (Fig. 5 baselines), baseline (Fig. 7 baselines), parameter_sensitivity"/>
 </p>
 
 Three engineering decisions worth knowing up front:
